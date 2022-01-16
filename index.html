@@ -8,20 +8,186 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <title>SISTA!</title>
+    <title>SISTA</title>
 </head>
 
 <body>
-    <h1>Hello, SISTA!</h1>
-    <div class="alert alert-primary" role="alert">
-        Selamat mengerjakan:)
+    <div class="container-fluid">
+        <h3 class="desktop py-2 text-center text-bold">
+            Sistem Informasi Seminar Tugas Akhir
+        </h3>
+        <h4 class="mobile py-2 text-center text-bold">
+            Sistem Informasi Seminar Tugas Akhir
+        </h4>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar sticky-top"
+        style="box-shadow: 0 5px 4px 0 rgba(82, 82, 82, 0.2);">
+        <a class="navbar-brand" href="#">SISTA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav text-white py-2">
+                <li class="nav-item">
+                    <a class="nav-link active text-navbar" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-navbar" href="#">Jadwal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-navbar" href="#">Daftar Seminar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-navbar" href="#">Berita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-navbar" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-4 mb-4">
+        <section class="alur" id="home">
+            <style>
+                @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+                * {
+                    font-family: 'Inter', sans-serif !important;
+                }
+
+                body .alur {
+                    background-color: #F9FCFC;
+                }
+
+                body .alur h1 {
+                    color: #232323;
+                    font-weight: 700 !important;
+                }
+
+                body .alur p {
+                    color: #879FB0;
+                }
+
+
+                body .cl-blue {
+                    color: #0F52BA !important;
+                }
+            </style>
+            <div class="container pb-4 px-4">
+                <div class="row text-center d-block pt-3 pb-md-4">
+                    <h3 class="desktop my-3">
+                        Alur Seminar / Tugas Akhir
+                    </h3>
+                    <h5 class="mobile my-3">
+                        Alur Seminar / Tugas Akhir
+                    </h5>
+                </div>
+                <div class="row py-4">
+                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                        <h2> <span class="badge badge-primary">1</span> </h2>
+                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                            Pendaftaran
+                        </p>
+                        <p class="mb-0">
+                            Daftarkan diri anda terlebih dahulu.
+                        </p>
+                    </div>
+                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                        <h2> <span class="badge badge-primary">2</span></h2>
+                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                            Pilih jadwal
+                        </p>
+                        <p class="mb-0">
+                            Pilih jadwal yang tersedia.
+                        </p>
+                    </div>
+                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                        <h2> <span class="badge badge-primary">3</span></h2>
+                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                            Gladi
+                        </p>
+                        <p class="mb-0">
+                            Pelaksanaan gladi.
+                        </p>
+                    </div>
+                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                        <h2> <span class="badge badge-primary">4</span></h2>
+                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                            Seminar
+                        </p>
+                        <p class="mb-0">
+                            Pelaksanaan seminar.
+                        </p>
+                    </div>
+                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                        <h2> <span class="badge badge-primary">5</span></h2>
+                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                            Peresmian
+                        </p>
+                        <p class="mb-0">
+                            Pelaksanaan peresmian.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                function coloringgoals(x) {
+                    x.classList.add('bg-white');
+                }
+
+                function normalgoals(x) {
+                    x.classList.remove('bg-white');
+                }
+            </script>
+        </section>
+        <section class="row">
+            <div class="col-md-12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eveniet ipsa ad tempore dolor? Ipsam
+                minima quibusdam hic praesentium ab a natus porro enim delectus aliquam! Sit laboriosam esse alias.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quas delectus accusantium cumque
+                nesciunt aspernatur natus ea totam illo fugiat at optio illum distinctio, in libero veritatis eos
+                ducimus voluptatibus!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consequuntur, a unde quas provident
+                laudantium sint debitis dignissimos minus ducimus? Quidem eius animi, atque beatae illo laudantium
+                blanditiis cum consectetur!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quae nesciunt itaque officiis quo
+                iste adipisci tenetur totam quibusdam, vel qui nulla illum libero tempora aut magni magnam commodi
+                ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquam excepturi nam fugit
+                unde error, saepe commodi in ullam doloribus cumque provident ea perferendis labore repellat sequi
+                dolorem iste. Veniam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque temporibus
+                perferendis illo dignissimos laboriosam autem nostrum tempore nesciunt necessitatibus possimus fugit
+                aliquid, neque rem explicabo dicta. Adipisci aspernatur hic in? Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Sit eveniet facilis soluta voluptatibus veniam fuga odit, minima provident molestiae
+                atque ad? Facilis omnis ducimus a porro commodi laudantium saepe odio. Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Quam quos ab quaerat beatae quibusdam praesentium tenetur eos sed dolore,
+                velit modi magnam, esse nisi mollitia sapiente aliquam impedit explicabo at. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Nam amet reiciendis eaque, magni natus et repellendus voluptate, similique
+                perspiciatis tempore voluptatibus consectetur ut vel enim excepturi doloribus molestias. Optio, saepe.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur vel officiis similique maxime!
+                Autem cupiditate eum, fugit pariatur possimus est aliquid, quod aperiam incidunt commodi atque deserunt
+                maiores, id dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum, minima vero
+                tenetur reprehenderit reiciendis nisi consequuntur itaque atque amet! Ipsum vitae, quas minus deleniti
+                esse ratione deserunt vel soluta.
+            </div>
+        </section>
+    </div>
+    <div class="card-footer bg-footer text-center">
+        Copyright &copy;Elion Project 2022. All rights reserved
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
