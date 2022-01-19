@@ -13,6 +13,37 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/a034d3d439.js" crossorigin="anonymous"></script>
 
+    <style>
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            text-align: center;
+            padding: 42px;
+            margin: 20px;
+        }
+
+        .bg-green {
+            background: #198754
+        }
+
+        .bg-red {
+            background: #DC3545;
+        }
+
+        .bg-yellow {
+            background: #FFC107;
+        }
+
+        .bg-blue {
+            background: #0D6EFD;
+        }
+
+        .bg-grey {
+            background: grey;
+        }
+    </style>
+
     <title>SISTA</title>
 </head>
 
@@ -27,21 +58,18 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-navbar sticky-top"
         style="box-shadow: 0 5px 4px 0 rgba(82, 82, 82, 0.2);">
-        <a class="navbar-brand" href="#">SISTA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+            <a class="navbar-brand" href="#">SISTA</a>
             <ul class="navbar-nav text-white py-2">
                 <li class="nav-item">
                     <a class="nav-link active text-navbar" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-navbar" href="#">Jadwal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-navbar" href="#">Daftar Seminar</a>
+                    <a class="nav-link text-navbar" href="#jadwalseminar">Jadwal</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-navbar" href="#">Berita</a>
@@ -50,186 +78,166 @@
                     <a class="nav-link text-navbar" href="#">About</a>
                 </li>
             </ul>
+            <div>
+                <button type="button" class="btn btn-success btn-lg">
+                    Login
+                </button>
+            </div>
         </div>
     </nav>
 
-    <div class="container-fluid mt-4 mb-4">
-        <section class="alur" id="home">
-            <style>
-                body .alur {
-                    background-color: #F9FCFC;
-                }
-
-                body .alur h1 {
-                    color: #232323;
-                    font-weight: 700 !important;
-                }
-
-                body .alur p {
-                    color: #879FB0;
-                }
-
-
-                body .cl-blue {
-                    color: #0F52BA !important;
-                }
-            </style>
-            <div class="container pb-2 px-2">
-                <div class="row text-center d-block pt-2 pb-md-4">
-                    <h3 class="desktop my-3">
+    <div class="container mt-3 mb-5">
+        <section id="home" class="h-100 w-100 bg-white" style="box-sizing: border-box;">
+            <div class="container pb-md-5">
+                <div class="row text-center d-block pt-5 pb-md-5">
+                    <h1 class="desktop my-3">
                         Alur Seminar / Tugas Akhir
-                    </h3>
-                    <h5 class="mobile my-3">
+                    </h1>
+                    <h2 class="mobile my-3">
                         Alur Seminar / Tugas Akhir
-                    </h5>
+                    </h2>
                 </div>
-                <div class="row py-4">
-                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
-                        <h2> <span class="badge badge-primary">1</span> </h2>
-                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
-                            Daftar TA
-                        </p>
-                        <div class="mb-0">
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> KHS - Lulus 110 SKS
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> IPK >= 2.0
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> Telah/Sedang Ambil Metode
-                                Penelitian
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> TTD Calon Pembimbing
-                            </p>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div>
+                        <div class="circle bg-blue">
+                            <i class="fas fa-file fa-4x" style="color: white;"></i>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="font-weight-bold text-center">
+                                Daftar TA
+                            </h5>
                         </div>
                     </div>
-                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
-                        <h2> <span class="badge badge-primary">2</span></h2>
-                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
-                            Seminar Proposal
-                        </p>
-                        <div class="mb-0">
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> KHS - Lulus 110 SKS
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> IPK >= 2.0
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> Telah/Sedang Ambil Metode
-                                Penelitian
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> TTD Calon Pembimbing
-                            </p>
+                    <div>
+                        <div class="circle bg-red">
+                            <i class="fas fa-handshake fa-4x" style="color: white;"></i>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="font-weight-bold text-center">
+                                Seminar <br> Proposal
+                            </h5>
                         </div>
                     </div>
-                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
-                        <h2> <span class="badge badge-primary">3</span></h2>
-                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
-                            Gladi
-                        </p>
-                        <div class="mb-0">
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> KHS - Lulus 110 SKS
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> IPK >= 2.0
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> Telah/Sedang Ambil Metode
-                                Penelitian
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> TTD Calon Pembimbing
-                            </p>
+                    <div>
+                        <div class="circle bg-grey">
+                            <i class="fas fa-check-square fa-4x" style="color: white;"></i>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="font-weight-bold text-center">
+                                Seminar <br> Hasil
+                            </h5>
                         </div>
                     </div>
-                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
-                        <h2> <span class="badge badge-primary">4</span></h2>
-                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
-                            Seminar
-                        </p>
-                        <div class="mb-0">
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> KHS - Lulus 110 SKS
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> IPK >= 2.0
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> Telah/Sedang Ambil Metode
-                                Penelitian
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> TTD Calon Pembimbing
-                            </p>
+                    <div>
+                        <div class="circle bg-yellow">
+                            <i class="fas fa-video fa-4x" style="color: white;"></i>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="font-weight-bold text-center">
+                                Sidang
+                            </h5>
                         </div>
                     </div>
-                    <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
-                        <h2> <span class="badge badge-primary">5</span></h2>
-                        <p class="font-weight-bold mt-4 mb-1 cl-blue">
-                            Peresmian
-                        </p>
-                        <div class="mb-0">
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> KHS - Lulus 110 SKS
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> IPK >= 2.0
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> Telah/Sedang Ambil Metode
-                                Penelitian
-                            </p>
-                            <p>
-                                <i class="fas fa-check-square" style="color: lightgreen;"></i> TTD Calon Pembimbing
-                            </p>
+                    <div>
+                        <div class="circle bg-green">
+                            <i class="fas fa-user-check fa-4x" style="color: white;"></i>
+                        </div>
+                        <div class="mt-1">
+                            <h5 class="font-weight-bold text-center">
+                                Yudisium
+                            </h5>
                         </div>
                     </div>
+                </div>
+                <div class="row text-center d-block pt-4 pb-md-4">
+                    <h1 class="desktop my-3">
+                        Daftarkan diri anda segera!
+                    </h1>
+                    <h2 class="mobile my-3">
+                        Daftarkan diri anda segera!
+                    </h2>
+                    <button type="button" class="btn btn-outline-primary btn-lg">
+                        Daftar Seminar
+                    </button>
                 </div>
             </div>
-
-            <script>
-                function coloringgoals(x) {
-                    x.classList.add('bg-white');
-                }
-
-                function normalgoals(x) {
-                    x.classList.remove('bg-white');
-                }
-            </script>
         </section>
-        <section class="row">
-            <div class="col-md-12">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eveniet ipsa ad tempore dolor? Ipsam
-                minima quibusdam hic praesentium ab a natus porro enim delectus aliquam! Sit laboriosam esse alias.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi quas delectus accusantium cumque
-                nesciunt aspernatur natus ea totam illo fugiat at optio illum distinctio, in libero veritatis eos
-                ducimus voluptatibus!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae consequuntur, a unde quas provident
-                laudantium sint debitis dignissimos minus ducimus? Quidem eius animi, atque beatae illo laudantium
-                blanditiis cum consectetur!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quae nesciunt itaque officiis quo
-                iste adipisci tenetur totam quibusdam, vel qui nulla illum libero tempora aut magni magnam commodi
-                ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aliquam excepturi nam fugit
-                unde error, saepe commodi in ullam doloribus cumque provident ea perferendis labore repellat sequi
-                dolorem iste. Veniam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque temporibus
-                perferendis illo dignissimos laboriosam autem nostrum tempore nesciunt necessitatibus possimus fugit
-                aliquid, neque rem explicabo dicta. Adipisci aspernatur hic in? Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Sit eveniet facilis soluta voluptatibus veniam fuga odit, minima provident molestiae
-                atque ad? Facilis omnis ducimus a porro commodi laudantium saepe odio. Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Quam quos ab quaerat beatae quibusdam praesentium tenetur eos sed dolore,
-                velit modi magnam, esse nisi mollitia sapiente aliquam impedit explicabo at. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Nam amet reiciendis eaque, magni natus et repellendus voluptate, similique
-                perspiciatis tempore voluptatibus consectetur ut vel enim excepturi doloribus molestias. Optio, saepe.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur vel officiis similique maxime!
-                Autem cupiditate eum, fugit pariatur possimus est aliquid, quod aperiam incidunt commodi atque deserunt
-                maiores, id dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum, minima vero
-                tenetur reprehenderit reiciendis nisi consequuntur itaque atque amet! Ipsum vitae, quas minus deleniti
-                esse ratione deserunt vel soluta.
+        <section id="jadwalseminar" class="h-100 w-100 bg-white" style="box-sizing: border-box">
+            <div class="container pb-md-5">
+                <div class="row text-center d-block pt-2 pb-md-5">
+                    <h1 class="desktop my-3">
+                        Jadwal Seminar / Sidang Tugas Akhir Mahasiswa
+                    </h1>
+                    <h2 class="mobile my-3">
+                        Jadwal Seminar / Sidang Tugas Akhir Mahasiswa
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <table class="table table-bordered">
+                            <tr>
+                                <td>
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <div>
+                                            Dioego Armando - 029102 <br>
+                                            Proposal
+                                        </div>
+                                        <div class="align-self-center">
+                                            <span class="badge badge-success">online</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center">10:00 <br>04-01-2022</td>
+                                <td class="text-center">
+                                    10 &nbsp;
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <div>
+                                            Muhammad Fikri - 02832983 <br>
+                                            Seminar Hasil
+                                        </div>
+                                        <div class="align-self-center">
+                                            <span class="badge badge-success">online</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center">10:00 <br>04-01-2022</td>
+                                <td class="text-center">
+                                    10 &nbsp;
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <div>
+                                            Dioego Armando - 029102 <br>
+                                            Seminar Akhir
+                                        </div>
+                                        <div class="align-self-center">
+                                            <span class="badge badge-danger">offline (Ruangan B3012)</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center">10:00 <br>04-01-2022</td>
+                                <td class="text-center">
+                                    10 &nbsp;
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
