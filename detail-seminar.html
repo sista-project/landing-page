@@ -42,6 +42,26 @@
         .bg-grey {
             background: grey;
         }
+
+        .footer-fixed {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .bc-icons-2 .breadcrumb-item+.breadcrumb-item::before {
+            content: none;
+        }
+
+        .bc-icons-2 .breadcrumb-item.active {
+            color: #455a64;
+        }
+
+        .breadcrumb {
+            margin-bottom: 0;
+            background-color: white;
+        }
     </style>
 
     <title>SISTA</title>
@@ -56,16 +76,48 @@
             Sistem Informasi Seminar Tugas Akhir
         </h4>
     </div>
-    <nav aria-label="breadcrumb" class="mb-5">
-        <div class="d-flex justify-content-end">
-            <ol class="breadcrumb" style="background: white;">
-                <li class=" breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Jadwal</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Detail</li>
-            </ol>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar sticky-top"
+        style="box-shadow: 0 5px 4px 0 rgba(82, 82, 82, 0.2);">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarNav">
+            <a class="navbar-brand" href="/">SISTA</a>
+            <ul class="navbar-nav text-white py-2">
+                <li class="nav-item">
+                    <a class="nav-link active text-navbar" href="/#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-navbar" href="/#jadwalseminar">Jadwal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-navbar" href="#">Berita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-navbar" href="#">About</a>
+                </li>
+            </ul>
+            <div>
+                <button type="button" class="btn btn-success btn-lg">
+                    Login
+                </button>
+            </div>
         </div>
     </nav>
     <div class="container mb-5">
+        <div class="bc-icons-2">
+            <nav aria-label="breadcrumb" class="d-flex justify-content-end lighten">
+                <ol class="breadcrumb lighten-4">
+                    <li class="breadcrumb-item"><a class="black-text" href="/#home">Home</a><i
+                            class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="breadcrumb-item"><a class="black-text" href="./#jadwalseminar">Jadwal</a><i
+                            class="fas fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="breadcrumb-item active">Detail</li>
+                </ol>
+            </nav>
+        </div>
         <section>
             <div class="card mb-3">
                 <div class="card-header">
@@ -114,7 +166,7 @@
         </section>
     </div>
     </div>
-    <div class="card-footer bg-footer text-center pb-3">
+    <div class="card-footer bg-footer text-center footer-fixed">
         Copyright &copy;Elion Project 2022. All rights reserved
     </div>
 
